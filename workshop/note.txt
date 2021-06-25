@@ -1,0 +1,88 @@
+Git = Version Control System
+
+==== Git Provider ====
+GitLab
+GitHub
+BitBucket
+
+mkdir demo01
+cd demo01   => Working directory
+git status
+git init    => Create git repository (.git)
+git status
+rm -rf .git
+
+touch 1.txt
+git status
+git add 1.txt
+git status
+=> Yes
+=> No
+
+git commit
+git config --global user.email "somkiat.p@gmail.com"
+git config --global user.name "somkiat"
+git commit
+git log
+git config --global core.editor "vim"
+.gitconfig
+
+// Restore
+rm 1.txt
+git status
+git restore 1.txt
+
+// Delete 1.txt
+rm 1.txt
+git status
+git add 1.txt
+git status
+
+git init
+git config
+git log
+git status
+git add 
+git commit 
+git restore
+.git/ => Git's Home
+
+
+== HTTPS ==
+git remote add r2 https://gitlab.com/up11/workshop-20210624.git
+git remote -v
+git push r2 master
+
+== SSH ==
+git remote add r1 git@gitlab.com:up11/workshop-20210624.git
+git remote -v
+
+client_global_hostkeys_private_confirm: server gave bad signature for RSA key 0
+vi ~/.ssh/config
+
+Host gitlab.com
+  UpdateHostKeys no
+
+=== Branch ===
+git branchg
+git branch somkiat
+git checkout somkiat
+git switch somkiat
+git checkout -b feature01
+
+Checkout vs Switch
+https://bluecast.tech/blog/git-switch-branch/
+
+
+=== Clone ===
+git clone
+
+=== Tag ===
+git tab 0.1
+git tag -a 1.0 dcd16be  ## tag with commit id
+
+
+Questions
+1. มี feature ของ git ตัวไหนที่ควรใช้อีกไหมครับ เช่น .gitignore
+
+
