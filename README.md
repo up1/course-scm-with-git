@@ -12,3 +12,6 @@
 
 ### Software requirements
 * [Git](https://git-scm.com/)
+
+### Resources
+* [Conventional Commits](https://www.conventionalcommits.org/)
